@@ -28,3 +28,22 @@ Beziehungen:
 n-1 Beziehung zu teiTeil
 
 ## Auftrag
+
+## ER-Diagramm
+
+```mermaid
+erDiagram
+    teiTeil {
+        int id PK
+        string name
+        string beschreibung
+    }
+
+    teiFamilie {
+        int id PK
+        string name
+        string typ
+    }
+
+    teiTeil ||--o{ teiFamilie : "gehört zu"
+```
