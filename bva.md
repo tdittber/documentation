@@ -27,6 +27,18 @@ Beziehungen:
 Beziehungen:
 n-1 Beziehung zu teiTeil
 
+### Tabelle teiBuchung
+
+|Name|Typ|Beschreibung|
+|-------:|--------|:-------:|
+|ID |Zahl   | technischer Schlüssel  |
+|Teil|Text| Referenz auf Teil in teiTeil|
+|Lagerort|Text|Referenz auf Lagerort|
+|Datum|Datum|Datum der Buchung|
+|Beschreibung|Text| beschreibenden Text zu der Buchung|
+|Stueck|Zahl|Anzahl der Teile, die entnommen wurden, negativ Ausbuchung|
+|Umbuchung|Flag|Umbuchungs Flag|
+
 ## Auftrag
 
 ## ER-Diagramm
