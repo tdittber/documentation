@@ -57,5 +57,16 @@ erDiagram
         string typ
     }
 
+    teiBuchung {
+        int id PK
+        string teil
+        string lagerort
+        date datum
+        string beschreibung
+        int stueck
+        int umbuchung
+    }
+
     teiTeil ||--o{ teiFamilie : "gehört zu"
+    teiBuchung ||--o{ teiTeil : "gehört zu"
 ```
